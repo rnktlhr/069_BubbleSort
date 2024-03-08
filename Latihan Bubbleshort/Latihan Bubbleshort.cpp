@@ -70,8 +70,12 @@ void display() {
     cout << endl;
     cout << endl; 
 }
-int main()
-{
-    std::cout << "Hello World!\n";
-}
+int main() {
+    input();
 
+    bubbleSortArray();
+    display();
+
+    return 0;
+}
+        
