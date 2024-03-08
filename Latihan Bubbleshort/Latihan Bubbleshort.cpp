@@ -2,16 +2,16 @@
 #include <string>
 using namespace std;
 
-int arr[20];
-int n;
+int arr[20]; //deklarasi variable global array a dengan ukuran 20
+int n; // deklarasi variabel n untuk menyimpan banyaknya elemen pada array
 
-void input() {
+void input() { //prosedur untuk input
     
     while (true) {
-        cout << "Masukkan banyaknya elemen pada array: ";
-        cin >> n;
-        if (n <= 20)
-            break;
+        cout << "Masukkan banyaknya elemen pada array: "; //output ke layar
+        cin >> n; //input dari pengguna 
+        if (n <= 20)//jika kurang dari atau sama dengan 20
+            break;//keluar dari loop
         else {
             cout << "\nArray dapat mempunyai maksimal 20 elemen.\n";
         }
@@ -28,7 +28,7 @@ void input() {
     }
 }
 
-void bubbleSortArray() {
+void bubbleSortArray() {//prosedur mengurutkan array dengan metode bubble sort
     int pass = 1;
 
     do {
